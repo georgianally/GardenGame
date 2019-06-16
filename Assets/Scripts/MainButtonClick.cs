@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MainButtonClick : MonoBehaviour
 {
     public Text name;
+    public Text money;
     Biodome biodome;
 
     void Start()
@@ -15,6 +16,9 @@ public class MainButtonClick : MonoBehaviour
 
     public void clickTheButton()
     {
+        biodome.money = biodome.money + biodome.ticketPrice;
+
+        money.text = "Money: " + biodome.money.ToString();
         name.text = biodome.name;
     }
 

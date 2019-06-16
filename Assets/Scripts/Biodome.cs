@@ -5,8 +5,8 @@ using UnityEngine;
 public class Biodome
 {
     public string name { get; }
-    public int money;
-    public int ticketPrice;
+    public int money { get; set; }
+    public int ticketPrice { get; }
     public int currentVisitors;
     public int totalVisitors;
 
