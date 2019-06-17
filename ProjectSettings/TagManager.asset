@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - VisitorExit
+  - Visitor
+  - Boundary
   layers:
   - Default
   - TransparentFX

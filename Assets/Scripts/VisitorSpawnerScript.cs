@@ -33,6 +33,5 @@ public class VisitorSpawnerScript : MonoBehaviour
                 visitor.SetActive(true);
             }
         }
-
     }
 }

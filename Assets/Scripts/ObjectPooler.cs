@@ -9,6 +9,7 @@ public class ObjectPooler : MonoBehaviour
     public List<GameObject> pooledObjects;
     public GameObject objectToPool;
     public int amountToPool;
+    public bool shouldExpand = true;
 
     void Awake()
     {
@@ -40,12 +41,16 @@ public class ObjectPooler : MonoBehaviour
             }
         }
         //3   
-        return null;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (shouldExpand)
+        {
+            GameObject obj = (GameObject)Instantiate(objectToPool);
+            obj.SetActive(false);
+            pooledObjects.Add(obj);
+            return obj;
+        }
+        else
+        {
+            return null;
+        }
     }
 }
