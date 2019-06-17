@@ -20,17 +20,19 @@ public class VisitorSpawnerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextSpawn)
+        if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
             randX = Random.Range(-1f, 1f);
             whereToSpawn = new Vector2(randX, transform.position.y);
-            Instantiate(visitor, whereToSpawn, Quaternion.identity);
+            visitor = ObjectPooler.SharedInstance.GetPooledObject();
+            if(visitor != null)
+            {
+                visitor.transform.position = whereToSpawn;
+                visitor.transform.rotation = Quaternion.identity;
+                visitor.SetActive(true);
+            }
         }
-    }
 
-    void OnBecameInvisible()
-    {
-        Destroy(visitor);
     }
 }
