@@ -8,9 +8,11 @@ public class GameController : MonoBehaviour
 
     public static GameController SharedInstance;
     Biodome biodome;
+    public Text name;
     public Text money;
     public Text totalVisitors;
     public Text currentVisitors;
+    public GameObject nameInputField;
 
     void Awake()
     {
@@ -21,6 +23,13 @@ public class GameController : MonoBehaviour
     void Start()
     {
         biodome = new Biodome();
+    }
+
+    public void GetInput(string enterName)
+    {
+        biodome.name = enterName;
+        name.text = biodome.name;
+        nameInputField.SetActive(false);
     }
 
     // Update is called once per frame
