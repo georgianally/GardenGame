@@ -7,11 +7,12 @@ public class GameController : MonoBehaviour
 {
 
     public static GameController SharedInstance;
-    Biodome biodome;
+    public Biodome biodome;
     public Text name;
     public Text money;
     public Text totalVisitors;
     public Text currentVisitors;
+    public Text rating;
     public GameObject nameInputField;
 
     void Awake()
@@ -36,6 +37,12 @@ public class GameController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void BuyPlant()
+    {
+        biodome.BuyItem("plant");
+        rating.text = "Rating: " + biodome.rating.ToString();
     }
 
     public void VisitorEnter()

@@ -26,6 +26,7 @@ public class VisitorSpawnerScript : MonoBehaviour
     {
         if (Time.time > nextSpawn)
         {
+            //spawnRate = spawnRate - GameController.SharedInstance.biodome.rating;
             nextSpawn = Time.time + spawnRate;
             randX = Random.Range(-1f, 1f);
             whereToSpawn = new Vector2(randX, transform.position.y);
