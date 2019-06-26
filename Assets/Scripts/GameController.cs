@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     public static GameController SharedInstance;
     Biodome biodome;
     public Text money;
+    public Text totalVisitors;
+    public Text currentVisitors;
 
     void Awake()
     {
@@ -27,10 +29,18 @@ public class GameController : MonoBehaviour
         
     }
 
-    public void IncrementMoney()
+    public void VisitorEnter()
     {
-        biodome.money = biodome.money + biodome.ticketPrice;
+        biodome.VisitorIn();
 
+        totalVisitors.text = "Total Visitors: " + biodome.totalVisitors.ToString();
+        currentVisitors.text = "Current Visitors: " + biodome.currentVisitors.ToString();
         money.text = "Money: " + biodome.money.ToString();
+    }
+
+    public void VisitorExit()
+    {
+        biodome.VisitorOut();
+        currentVisitors.text = "Current Visitors: " + biodome.currentVisitors.ToString();
     }
 }

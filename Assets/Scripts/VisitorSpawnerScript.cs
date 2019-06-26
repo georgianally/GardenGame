@@ -35,7 +35,7 @@ public class VisitorSpawnerScript : MonoBehaviour
                 visitor.transform.position = whereToSpawn;
                 visitor.transform.rotation = Quaternion.identity;
                 visitor.SetActive(true);
-                GameController.SharedInstance.IncrementMoney();
+                GameController.SharedInstance.VisitorEnter();
                 //biodome.money = biodome.money + biodome.ticketPrice;
 
                 //money.text = "Money: " + biodome.money.ToString();

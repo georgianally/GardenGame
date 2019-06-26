@@ -17,6 +17,7 @@ public class DestoryByBoundary : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+            GameController.SharedInstance.VisitorExit();
         }
     }
 }
