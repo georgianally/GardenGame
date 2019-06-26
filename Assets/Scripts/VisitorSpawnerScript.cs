@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VisitorSpawnerScript : MonoBehaviour
 {
@@ -11,10 +12,13 @@ public class VisitorSpawnerScript : MonoBehaviour
     public float spawnRate = 2f;
     float nextSpawn = 0.0f;
 
+    public Text money;
+    //Biodome biodome;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //biodome = new Biodome();
     }
 
     // Update is called once per frame
@@ -31,6 +35,10 @@ public class VisitorSpawnerScript : MonoBehaviour
                 visitor.transform.position = whereToSpawn;
                 visitor.transform.rotation = Quaternion.identity;
                 visitor.SetActive(true);
+                GameController.SharedInstance.VisitorEnter();
+                //biodome.money = biodome.money + biodome.ticketPrice;
+
+                //money.text = "Money: " + biodome.money.ToString();
             }
         }
     }
