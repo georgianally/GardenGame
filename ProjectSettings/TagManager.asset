@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Visitor
   - Boundary
+  - Canvas
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4008388931
     locked: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 940551451201997406}
   - component: {fileID: 2834927646557270957}
   - component: {fileID: -2079401143715281578}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Visitor
   m_TagString: Visitor
   m_Icon: {fileID: 0}
@@ -68,11 +68,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -286578365
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.02133751, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
