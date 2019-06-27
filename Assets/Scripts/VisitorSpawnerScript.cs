@@ -35,7 +35,8 @@ public class VisitorSpawnerScript : MonoBehaviour
             {
                 visitor.transform.position = whereToSpawn;
                 visitor.transform.rotation = Quaternion.identity;
-                visitor.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                //visitor.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                //visitor.GetComponent<SpriteRenderer>().sortingOrder = 1;
                 visitor.SetActive(true);
                 GameController.SharedInstance.VisitorEnter();
                 //biodome.money = biodome.money + biodome.ticketPrice;

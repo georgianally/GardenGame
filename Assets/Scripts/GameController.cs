@@ -43,6 +43,7 @@ public class GameController : MonoBehaviour
     {
         biodome.BuyItem("plant");
         rating.text = "Rating: " + biodome.rating.ToString();
+        money.text = "Money: " + biodome.money.ToString();
     }
 
     public void VisitorEnter()
