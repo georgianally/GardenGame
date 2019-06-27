@@ -26,6 +26,7 @@ public class VisitorSpawnerScript : MonoBehaviour
     {
         if (Time.time > nextSpawn)
         {
+            //spawnRate = spawnRate - GameController.SharedInstance.biodome.rating;
             nextSpawn = Time.time + spawnRate;
             randX = Random.Range(-1f, 1f);
             whereToSpawn = new Vector2(randX, transform.position.y);
@@ -34,7 +35,8 @@ public class VisitorSpawnerScript : MonoBehaviour
             {
                 visitor.transform.position = whereToSpawn;
                 visitor.transform.rotation = Quaternion.identity;
-                visitor.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                //visitor.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, true);
+                //visitor.GetComponent<SpriteRenderer>().sortingOrder = 1;
                 visitor.SetActive(true);
                 GameController.SharedInstance.VisitorEnter();
                 //biodome.money = biodome.money + biodome.ticketPrice;
