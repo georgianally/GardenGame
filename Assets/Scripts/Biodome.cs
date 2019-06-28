@@ -19,6 +19,11 @@ public class Biodome
         totalVisitors = 0;
     }
 
+    public void BuyItem(int price)
+    {
+        money = money - price;
+    }
+
     public void VisitorIn()
     {
         money = money + ticketPrice;

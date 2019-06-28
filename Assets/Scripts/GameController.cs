@@ -38,18 +38,39 @@ public class GameController : MonoBehaviour
         
     }
 
+    public void BuyItem(string item)
+    {
+        switch (item)
+        {
+            case "Flower":
+                biodome.BuyItem(2);
+                break;
+            case "Shrub":
+                biodome.BuyItem(5);
+                break;
+            default:
+                break;
+        }
+        DisplayMoney();
+    }
+
     public void VisitorEnter()
     {
         biodome.VisitorIn();
 
         totalVisitors.text = "Total Visitors: " + biodome.totalVisitors.ToString();
         currentVisitors.text = "Current Visitors: " + biodome.currentVisitors.ToString();
-        money.text = "Money: " + biodome.money.ToString();
+        DisplayMoney();
     }
 
     public void VisitorExit()
     {
         biodome.VisitorOut();
         currentVisitors.text = "Current Visitors: " + biodome.currentVisitors.ToString();
+    }
+
+    private void DisplayMoney()
+    {
+        money.text = "Money: " + biodome.money.ToString();
     }
 }
