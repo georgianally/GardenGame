@@ -13,6 +13,10 @@ public class GameController : MonoBehaviour
     public Text totalVisitors;
     public Text currentVisitors;
     public GameObject nameInputField;
+    public GameObject flowerImage;
+    public GameObject flowerButton;
+    public GameObject shrubImage;
+    public GameObject shrubButton;
 
     void Awake()
     {
@@ -43,10 +47,14 @@ public class GameController : MonoBehaviour
         switch (item)
         {
             case "Flower":
-                biodome.BuyItem(2);
+                biodome.BuyItem(10);
+                flowerImage.SetActive(true);
+                flowerButton.SetActive(false);
                 break;
             case "Shrub":
-                biodome.BuyItem(5);
+                biodome.BuyItem(20);
+                shrubImage.SetActive(true);
+                shrubButton.SetActive(false);
                 break;
             default:
                 break;
