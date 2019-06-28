@@ -14,6 +14,11 @@ public class GameController : MonoBehaviour
     public Text currentVisitors;
     public Text rating;
     public GameObject nameInputField;
+    public GameObject flowerImage;
+    public GameObject buyFlower;
+    public GameObject shrubImage;
+    public GameObject buyShrub;
+
 
     void Awake()
     {
@@ -39,9 +44,23 @@ public class GameController : MonoBehaviour
         
     }
 
-    public void BuyPlant()
+    public void BuyItem(string item)
     {
-        biodome.BuyItem("plant");
+        switch (item)
+        {
+            case "Flower":
+                biodome.BuyItem(10);
+                flowerImage.SetActive(true);
+                buyFlower.SetActive(false);
+                break;
+            case "Shrub":
+                biodome.BuyItem(20);
+                shrubImage.SetActive(true);
+                buyShrub.SetActive(false);
+                break;
+            default:
+                break;
+        }
         rating.text = "Rating: " + biodome.rating.ToString();
         money.text = "Money: " + biodome.money.ToString();
     }

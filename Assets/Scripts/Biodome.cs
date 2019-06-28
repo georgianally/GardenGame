@@ -19,15 +19,13 @@ public class Biodome
         ticketPrice = 1;
         currentVisitors = 0;
         totalVisitors = 0;
+        rating = 0.0f;
     }
 
-    public void BuyItem(string item)
+    public void BuyItem(int price)
     {
-        if(item == "plant")
-        {
-            money = money - 10;
-            rating = rating + 0.1f;
-        }
+        money = money - price;
+        rating = rating + price/10;
     }
 
     public void VisitorIn()
