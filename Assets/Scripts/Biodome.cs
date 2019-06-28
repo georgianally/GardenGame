@@ -9,6 +9,7 @@ public class Biodome
     public int ticketPrice { get; }
     public int currentVisitors { get; set; }
     public int totalVisitors { get; set; }
+    public float rating { get; set; }
 
     public Biodome()
     {
@@ -22,6 +23,7 @@ public class Biodome
     public void BuyItem(int price)
     {
         money = money - price;
+
     }
 
     public void VisitorIn()
