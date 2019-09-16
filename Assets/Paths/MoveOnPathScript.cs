@@ -18,7 +18,8 @@ public class MoveOnPathScript : MonoBehaviour
     void Start()
     {
         CurrentWayPointID = 0;
-        PathToFollow = GameObject.Find(pathName).GetComponent<EditorPathScript> ();
+        //Below for random path
+        //PathToFollow = GameObject.Find(pathName).GetComponent<EditorPathScript> ();
         last_position = transform.position;
 
     }
