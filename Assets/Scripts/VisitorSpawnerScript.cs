@@ -48,9 +48,8 @@ public class VisitorSpawnerScript : MonoBehaviour
 
     public void CheckRating()
     {
-        if (GameController.SharedInstance.GetRating() > 20)
-        {
-            spawnRate = 1f;
-        }
+        float currentRating = GameController.SharedInstance.GetRating();
+
+
     }
 }

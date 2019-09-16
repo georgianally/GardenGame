@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitor: {fileID: 8503880655506607385, guid: 85ec3556132070745af7012ac843d955, type: 3}
-  spawnRate: 5
+  spawnRate: 10
   money: {fileID: 1679658824}
 --- !u!4 &143198537
 Transform:
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Rating: '
+  m_Text: 'Rating: 0'
 --- !u!1 &450964746
 GameObject:
   m_ObjectHideFlags: 0
