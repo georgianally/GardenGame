@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitor: {fileID: 8503880655506607385, guid: 85ec3556132070745af7012ac843d955, type: 3}
-  spawnRate: 10
+  spawnRate: 5
   money: {fileID: 1679658824}
 --- !u!4 &143198537
 Transform:
@@ -1027,15 +1027,15 @@ RectTransform:
   m_GameObject: {fileID: 878932716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.075, y: 1.2731249, z: 1}
   m_Children: []
   m_Father: {fileID: 1957543123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.47497, y: 0}
-  m_SizeDelta: {x: 950.95, y: 633}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.4749756, y: 0}
+  m_SizeDelta: {x: -73.04999, y: -135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &878932718
 SpriteRenderer:
