@@ -25,7 +25,7 @@ public class Biodome
     public void BuyItem(int price)
     {
         money = money - price;
-        rating = rating + price/10;
+        rating = rating + price;
     }
 
     public void VisitorIn()

@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 152, y: -50}
+  m_AnchoredPosition: {x: 195, y: -214}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132696642
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitor: {fileID: 8503880655506607385, guid: 85ec3556132070745af7012ac843d955, type: 3}
-  spawnRate: 3
+  spawnRate: 10
   money: {fileID: 1679658824}
 --- !u!4 &143198537
 Transform:
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.764151, g: 0.6115998, b: 0.32079923, a: 0.8117647}
+  m_Color: {r: 1, g: 0.8095258, b: 0.2784314, a: 0.85490197}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

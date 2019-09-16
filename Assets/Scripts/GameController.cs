@@ -38,6 +38,11 @@ public class GameController : MonoBehaviour
         nameInputField.SetActive(false);
     }
 
+    public float GetRating()
+    {
+        return biodome.rating;
+    }
+
     // Update is called once per frame
     void Update()
     {
